@@ -1,0 +1,16 @@
+{
+    "contactDetails" : [
+    {
+        "contactId": 505704,
+        "canUserEdit": false,
+        "displayOrder": 1,
+        "firstName": "Michael",
+        "lastName": "Rogers",
+        "fullName": "Michael M Rogers",
+        "fullNameInverted": "Rogers, Michael M",
+        "middleInitial": "M",
+        "primaryEmail": "michael.m.rogers@nasa.gov",
+        "publicEmail": true,
+        "nacontact": false
+    }
+]}

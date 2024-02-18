@@ -1,0 +1,441 @@
+{
+    "acronym": "",
+    "projectId": 146621,
+    "title": "",
+    "website": "",
+    "lastUpdated": "2024-2-14",
+    "detail": {
+        "acronym": "",
+        "projectId": 146621,
+        "title": "Position Correlated Vision Dataset from Multirotor and Fixed-wing sUAS of General Aviation aircraft, Fixed-wing sUAS, Multirotor sUAS, and Birds",
+        "primaryTaxonomyNodes": [
+            {
+                "taxonomyNodeId": 10969,
+                "taxonomyRootId": 8816,
+                "level": 1,
+                "code": "TX17",
+                "title": "Guidance, Navigation, and Control (GN&C)\t\t\t\t",
+                "definition": "All forms of aerospace systems require some form of guidance, navigation, and control (GN&C) capability, either on-board, ground-based or a combination of both. This section of the taxonomy captures the unique GN&C system technologies that enable new missions; reduce cost, schedule, mass or power while maintaining or improving GN&C performance; improve system safety and longevity; or reduce environmental impact of aerospace vehicle operations. ",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            }
+        ],
+        "additionalTaxonomyNodes": [
+            {
+                "taxonomyNodeId": 10611,
+                "taxonomyRootId": 8816,
+                "parentNodeId": 10610,
+                "level": 2,
+                "code": "TX04.1",
+                "title": "Sensing and Perception",
+                "definition": "Sensing and perception provides situational awareness for exploration robots, human-assistive robots, and autonomous vehicles and improves drones and piloted aircraft navigation and flight.",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10612,
+                "taxonomyRootId": 8816,
+                "parentNodeId": 10611,
+                "level": 3,
+                "code": "TX04.1.1",
+                "title": "Sensing for Robotic systems",
+                "definition": "Robotic sensing capabilities and situational awareness are needed for robotic operations that involve interaction with the environment. Additional sensing types increase the exploration range of surface and below-surface mobility systems, assist in detecting landing hazards in planetary exploration, and enable robotic manipulation in space without close human supervision.",
+                "exampleTechnologies": "Space-qualifiable force and torque sensors; space-qualifiable tactile sensors; three dimensional (3D) range imaging sensors for surface mobility, above-surface mobility, and manipulation; in-situ camera geometric calibration diagnostics and self-calibration",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10971,
+                "taxonomyRootId": 8816,
+                "parentNodeId": 10970,
+                "level": 3,
+                "code": "TX17.1.1",
+                "title": "Guidance Algorithms\t",
+                "definition": "This area covers technologies for the development of algorithms (and associated software) for autonomous real-time or near-real-time selection of desired targets and the computation of the maneuvers to attain those targets while optimizing system performance.",
+                "exampleTechnologies": "Ascent guidance, abort guidance, multi-vehicle formation flying guidance, vehicle 6DOF path planning, optimal attitude slewing guidance, next-generation entry guidance and powered descent guidance to support the functions of entry, descent, and landing (EDL) precision / pinpoint landing on planets/small bodies, computationally efficient trajectory / attitude optimization tools for onboard use",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10969,
+                "taxonomyRootId": 8816,
+                "level": 1,
+                "code": "TX17",
+                "title": "Guidance, Navigation, and Control (GN&C)\t\t\t\t",
+                "definition": "All forms of aerospace systems require some form of guidance, navigation, and control (GN&C) capability, either on-board, ground-based or a combination of both. This section of the taxonomy captures the unique GN&C system technologies that enable new missions; reduce cost, schedule, mass or power while maintaining or improving GN&C performance; improve system safety and longevity; or reduce environmental impact of aerospace vehicle operations. ",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10970,
+                "taxonomyRootId": 8816,
+                "parentNodeId": 10969,
+                "level": 2,
+                "code": "TX17.1",
+                "title": "Guidance and Targeting Algorithms",
+                "definition": "Guidance and targeting algorithms primarily constitute the development of robust, reliable, and computationally efficient mathematical algorithms (and their associated software implementation) for the functions of on-board or ground-based computation of desired/reference space system flight paths and/or attitudes, and changes in flight paths and/or attitudes, required to meet mission requirements.",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10610,
+                "taxonomyRootId": 8816,
+                "level": 1,
+                "code": "TX04",
+                "title": "Robotic Systems",
+                "definition": "For human exploration, robots will be leveraged as precursor explorers preceding crewed missions, as crew helpers, as extravehicular activity (EVA) mobility aids, and as caretakers of assets left behind. For science exploration, robots will blaze new trails on distant and hostile worlds to better our understanding of the universe and to extend the reach of the human race. By expanding our planetary access capability, manipulating assets and resources, and understanding planetary bodies using remote and in-situ sensors, we can prepare planets for human arrival, support crews in-space operations, and manage assets left behind.",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            },
+            {
+                "taxonomyNodeId": 10615,
+                "taxonomyRootId": 8816,
+                "parentNodeId": 10611,
+                "level": 3,
+                "code": "TX04.1.4",
+                "title": "Object, Event, and Activity Recognition",
+                "definition": "Object, event, and activity recognition of static objects, dynamic natural events, and dynamic human activities near the vehicle provides awareness of these items and enables onboard decisions about how to react to them. Natural objects that are important to recognize include: landmarks that facilitate navigation; obstacles to rovers or landers; and objects that are important to science investigations, such as geologic targets and atmospheric phenomena.",
+                "exampleTechnologies": "Natural object recognition, human-made object recognition, event recognition",
+                "hasChildren": false,
+                "hasInteriorContent": true
+            }
+        ],
+        "startTrl": 3,
+        "currentTrl": 4,
+        "endTrl": 4,
+        "benefits": "<p>This data provides anticipated benefit for development efforts targeting sensor fusion, image processing &amp; computer vision, and autonomy technology. This data is anticipated to benefit the development or maturation of technical methods for sense and avoid.</p> ",
+        "description": "<p>Onboard autonomy is needed for safe autonomous Advanced Air Mobility (AAM) flight operations to keep aircraft from colliding with each other and buildings. Despite decades of Sense and Avoid research in the aviation domain, the specific requirements from an aviation authority for widespread autonomous operations for small aircraft and small Unmanned Aircraft Systems (sUAS) does not exist. AAM researchers need to provide reproducible methodologies for developing collision avoidance systems. One promising sensor for Sense and Avoid systems is the camera as it is lightweight, data rich, and can provide high angular resolution of objects. In this work, we present a vision dataset collected from multirotor sUAS and fixed-wing sUAS where the targets include multirotor sUAS, fixed-wing sUAS, General Aviation aircraft, and birds captured over seven days with varying flight conditions through thirty-one videos. A novel semi-autonomous data labeling technique is presented utilizing an object detection and tracking pipeline. The dataset includes onboard flight controller logs along with the computed separation distance between the ownship and intruder aircraft per frame.</p> ",
+        "destinations": [
+            {
+                "lkuCodeId": 1543,
+                "code": "EARTH",
+                "description": "Earth",
+                "lkuCodeTypeId": 526,
+                "lkuCodeType": {
+                    "codeType": "DESTINATION_TYPE",
+                    "description": "Destination Type"
+                }
+            }
+        ],
+        "startYear": 2017,
+        "startMonth": 11,
+        "endYear": 2023,
+        "endMonth": 12,
+        "statusDescription": "Completed",
+        "principalInvestigators": [
+            {
+                "contactId": 73440,
+                "canUserEdit": false,
+                "displayOrder": 1,
+                "firstName": "Chester",
+                "lastName": "Dolph",
+                "fullName": "Chester V Dolph",
+                "fullNameInverted": "Dolph, Chester V",
+                "middleInitial": "V",
+                "primaryEmail": "chester.v.dolph@nasa.gov",
+                "publicEmail": true,
+                "nacontact": false
+            }
+        ],
+        "programDirectors": [
+            {
+                "contactId": 228054,
+                "canUserEdit": false,
+                "firstName": "John",
+                "lastName": "Cavolowsky",
+                "fullName": "John A Cavolowsky",
+                "fullNameInverted": "Cavolowsky, John A",
+                "middleInitial": "A",
+                "primaryEmail": "john.a.cavolowsky@nasa.gov",
+                "publicEmail": true,
+                "nacontact": false
+            }
+        ],
+        "projectManagers": [
+            {
+                "contactId": 505704,
+                "canUserEdit": false,
+                "displayOrder": 1,
+                "firstName": "Michael",
+                "lastName": "Rogers",
+                "fullName": "Michael M Rogers",
+                "fullNameInverted": "Rogers, Michael M",
+                "middleInitial": "M",
+                "primaryEmail": "michael.m.rogers@nasa.gov",
+                "publicEmail": true,
+                "nacontact": false
+            }
+        ],
+        "website": "https://nari.arc.nasa.gov/ttt-ram/",
+        "libraryItems": [
+            {
+                "file": {
+                    "fileExtension": "zip",
+                    "fileId": 267482,
+                    "fileName": "labels",
+                    "fileSize": 2259687889,
+                    "objectId": 268238,
+                    "objectType": {
+                        "lkuCodeId": 889,
+                        "code": "LIBRARY_ITEMS",
+                        "description": "Library Items",
+                        "lkuCodeTypeId": 182,
+                        "lkuCodeType": {
+                            "codeType": "OBJECT_TYPE",
+                            "description": "Object Type"
+                        }
+                    },
+                    "objectTypeId": 889,
+                    "fileSizeString": "2.1 GB"
+                },
+                "files": [
+                    {
+                        "fileExtension": "zip",
+                        "fileId": 267482,
+                        "fileName": "labels",
+                        "fileSize": 2259687889,
+                        "objectId": 268238,
+                        "objectType": {
+                            "lkuCodeId": 889,
+                            "code": "LIBRARY_ITEMS",
+                            "description": "Library Items",
+                            "lkuCodeTypeId": 182,
+                            "lkuCodeType": {
+                                "codeType": "OBJECT_TYPE",
+                                "description": "Object Type"
+                            }
+                        },
+                        "objectTypeId": 889,
+                        "fileSizeString": "2.1 GB"
+                    }
+                ],
+                "id": 268238,
+                "title": "labels",
+                "description": "",
+                "libraryItemTypeId": 1840,
+                "projectId": 146621,
+                "publishedDateString": "Oct 2023",
+                "contentType": {
+                    "lkuCodeId": 1840,
+                    "code": "DATA_SET",
+                    "description": "Data Set",
+                    "lkuCodeTypeId": 341,
+                    "lkuCodeType": {
+                        "codeType": "LIBRARY_ITEM_TYPE",
+                        "description": "Library Item Type"
+                    }
+                }
+            },
+            {
+                "file": {
+                    "fileExtension": "zip",
+                    "fileId": 267476,
+                    "fileName": "yoloFileStructureLabels_PART2",
+                    "fileSize": 6286283937,
+                    "objectId": 268230,
+                    "objectType": {
+                        "lkuCodeId": 889,
+                        "code": "LIBRARY_ITEMS",
+                        "description": "Library Items",
+                        "lkuCodeTypeId": 182,
+                        "lkuCodeType": {
+                            "codeType": "OBJECT_TYPE",
+                            "description": "Object Type"
+                        }
+                    },
+                    "objectTypeId": 889,
+                    "fileSizeString": "5.9 GB"
+                },
+                "files": [
+                    {
+                        "fileExtension": "zip",
+                        "fileId": 267476,
+                        "fileName": "yoloFileStructureLabels_PART2",
+                        "fileSize": 6286283937,
+                        "objectId": 268230,
+                        "objectType": {
+                            "lkuCodeId": 889,
+                            "code": "LIBRARY_ITEMS",
+                            "description": "Library Items",
+                            "lkuCodeTypeId": 182,
+                            "lkuCodeType": {
+                                "codeType": "OBJECT_TYPE",
+                                "description": "Object Type"
+                            }
+                        },
+                        "objectTypeId": 889,
+                        "fileSizeString": "5.9 GB"
+                    }
+                ],
+                "id": 268230,
+                "title": "yoloFileStructureLabels_PART2",
+                "description": "",
+                "libraryItemTypeId": 1840,
+                "projectId": 146621,
+                "publishedDateString": "Oct 2023",
+                "contentType": {
+                    "lkuCodeId": 1840,
+                    "code": "DATA_SET",
+                    "description": "Data Set",
+                    "lkuCodeTypeId": 341,
+                    "lkuCodeType": {
+                        "codeType": "LIBRARY_ITEM_TYPE",
+                        "description": "Library Item Type"
+                    }
+                }
+            },
+            {
+                "file": {
+                    "fileExtension": "zip",
+                    "fileId": 267481,
+                    "fileName": "yoloFileStructureLabels_PART1",
+                    "fileSize": 5537968692,
+                    "objectId": 268229,
+                    "objectType": {
+                        "lkuCodeId": 889,
+                        "code": "LIBRARY_ITEMS",
+                        "description": "Library Items",
+                        "lkuCodeTypeId": 182,
+                        "lkuCodeType": {
+                            "codeType": "OBJECT_TYPE",
+                            "description": "Object Type"
+                        }
+                    },
+                    "objectTypeId": 889,
+                    "fileSizeString": "5.2 GB"
+                },
+                "files": [
+                    {
+                        "fileExtension": "zip",
+                        "fileId": 267481,
+                        "fileName": "yoloFileStructureLabels_PART1",
+                        "fileSize": 5537968692,
+                        "objectId": 268229,
+                        "objectType": {
+                            "lkuCodeId": 889,
+                            "code": "LIBRARY_ITEMS",
+                            "description": "Library Items",
+                            "lkuCodeTypeId": 182,
+                            "lkuCodeType": {
+                                "codeType": "OBJECT_TYPE",
+                                "description": "Object Type"
+                            }
+                        },
+                        "objectTypeId": 889,
+                        "fileSizeString": "5.2 GB"
+                    }
+                ],
+                "id": 268229,
+                "title": "yoloFileStructuresLabels_PART1.zip",
+                "description": "",
+                "libraryItemTypeId": 1840,
+                "projectId": 146621,
+                "publishedDateString": "Oct 2023",
+                "contentType": {
+                    "lkuCodeId": 1840,
+                    "code": "DATA_SET",
+                    "description": "Data Set",
+                    "lkuCodeTypeId": 341,
+                    "lkuCodeType": {
+                        "codeType": "LIBRARY_ITEM_TYPE",
+                        "description": "Library Item Type"
+                    }
+                }
+            }
+        ],
+        "transitions": [
+            {
+                "transitionId": 54560,
+                "projectId": 146621,
+                "transitionDate": "2023-10-01",
+                "path": "Closed Out",
+                "url": "",
+                "details": "<p>Work closed out with technical publication.</p> ",
+                "infoText": "Closed out",
+                "infoTextExtra": "",
+                "dateText": "October 2023"
+            }
+        ],
+        "responsibleMd": {
+            "acronym": "ARMD",
+            "canUserEdit": false,
+            "city": "",
+            "external": false,
+            "linkCount": 0,
+            "organizationId": 4858,
+            "organizationName": "Aeronautics Research Mission Directorate",
+            "organizationType": "NASA_Mission_Directorate",
+            "naorganization": false,
+            "organizationTypePretty": "NASA Mission Directorate"
+        },
+        "program": {
+            "acronym": "TACP",
+            "active": true,
+            "description": "<p>The Transformative Aeronautics Concepts Program cultivates multi-disciplinary, revolutionary concepts to enable aviation transformation and harnesses convergence in aeronautics and non-aeronautics technologies to create new opportunities in aviation. The program&rsquo;s goal is to knock down technical barriers and infuse internally and externally originated concepts into all six strategic thrusts identified by ARMD, creating innovation for tomorrow in the aviation system. Using sharply focused activities, the program provides flexibility for innovators to explore technology feasibility and provide the knowledge base for radical transformation. The program solicits and encourages revolutionary concepts, creates the environment for researchers to become immersed in trying out new ideas, performs ground and small-scale flight tests, allows failures and learns from them, and drives rapid turnover into new concepts.&nbsp; The TAC Program also explores technologies that are broadly-critical to advancing aviation.&nbsp; Further, it places attention on computational and experimental tools that are critical for supporting development and enabling aviation transformation by investing in never-done-before developments that can provide paradigm-shifting analysis and experimental capability.</p> <p>The Transformative Aeronautics Concepts Program cultivates multi-disciplinary, revolutionary concepts to enable aviation transformation with a goal to knock down technical barriers and infuse internally and externally originated concepts into all six ARMD strategic research thrusts.</p> <p>The work in the Transformative Aeronautics Concepts Program directly benefits the public by bringing game-changing advances in other fields to solve aviation&#39;s global challenges of energy and sustainability.&nbsp;&nbsp;It explores concepts that can be applied across the NASA ARMD research portfolio.&nbsp; The TACP is an incubator for short-term explorations of innovative ideas that could lead to radical transformation for aviation. It solicits and encourages revolutionary concepts and, most important, creates an environment in which researchers can become immersed in trying out new ideas. It performs ground and small-scale flight tests that allow for failure, for learning from failure, and for rapidly driving on to new approaches.&nbsp; TACP also advances the state of the art in tools for simulation and modeling that can accurately predict the performance of revolutionary aircraft shapes or methods of propulsion. It drives advances in technologies that will enable aviation concepts.&nbsp;&nbsp;TACP exists to solicit and converge ideas from diverse thinkers.</p>",
+            "programId": 16852,
+            "responsibleMd": {
+                "acronym": "ARMD",
+                "canUserEdit": false,
+                "city": "",
+                "external": false,
+                "linkCount": 0,
+                "organizationId": 4858,
+                "organizationName": "Aeronautics Research Mission Directorate",
+                "organizationType": "NASA_Mission_Directorate",
+                "naorganization": false,
+                "organizationTypePretty": "NASA Mission Directorate"
+            },
+            "responsibleMdId": 4858,
+            "stockImageFileId": 33278,
+            "title": "Transformative Aeronautics Concepts Program"
+        },
+        "leadOrganization": {
+            "acronym": "LaRC",
+            "canUserEdit": false,
+            "city": "Hampton",
+            "country": {
+                "abbreviation": "US",
+                "countryId": 236,
+                "name": "United States"
+            },
+            "countryId": 236,
+            "external": false,
+            "linkCount": 0,
+            "organizationId": 4852,
+            "organizationName": "Langley Research Center",
+            "organizationType": "NASA_Center",
+            "stateTerritory": {
+                "abbreviation": "VA",
+                "country": {
+                    "abbreviation": "US",
+                    "countryId": 236,
+                    "name": "United States"
+                },
+                "countryId": 236,
+                "name": "Virginia",
+                "stateTerritoryId": 7
+            },
+            "stateTerritoryId": 7,
+            "naorganization": false,
+            "organizationTypePretty": "NASA Center"
+        },
+        "statesWithWork": [
+            {
+                "abbreviation": "VA",
+                "country": {
+                    "abbreviation": "US",
+                    "countryId": 236,
+                    "name": "United States"
+                },
+                "countryId": 236,
+                "name": "Virginia",
+                "stateTerritoryId": 7
+            }
+        ],
+        "lastUpdated": "2024-2-14",
+        "releaseStatusString": "Released",
+        "viewCount": 11,
+        "endDateString": "Dec 2023",
+        "startDateString": "Nov 2017"
+    }
+}
