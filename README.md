@@ -25,12 +25,15 @@ To run the NASA TechPort Projects web application locally, follow these steps:
    git clone https://github.com/soumyanjaleemahapatra/nasa-techport-projects.git
 
 2. **Navigate to the project directory:**
+    ```bash
     cd nasa-techport-projects
 
 3. **Install the necessary dependencies:**
+    ```bash
     npm install
 
 4. **Run the development server:**
+    ```bash
     npm run dev
 
 5. **Open the application:**
