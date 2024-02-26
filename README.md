@@ -77,7 +77,7 @@ The list of components with their main responsibilities is as follows:
 3. **Using SASS Instead of Normal CSS:**
    - Currently, scoped styles are added to the components. CSS preprocessors like SASS could be used for an elegant solution.
 
-## Getting Started {#getting-started}
+## Getting Started
 
 To run the web application locally, follow these steps:
 
