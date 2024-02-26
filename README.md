@@ -17,8 +17,6 @@ The NASA TechPort Projects web application provides a user-friendly interface fo
 - Fetch API for data retrieval
 - Vue DatePicker for date selection
 
-[Jump to Getting started](#getting-started)
-
 ## Project Architecture
 
 The project follows a component-based architecture. 
