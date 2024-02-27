@@ -1,11 +1,11 @@
 // @vitest-environment nuxt
 import { describe, it, expect } from 'vitest'
 import { mountSuspended } from '@nuxt/test-utils/runtime';
-import Pagination from '../../components/Pagination.vue';
-describe('Pagination', () => {
+import PaginationComponent from '../../components/PaginationComponent.vue';
+describe('PaginationComponent', () => {
     it('renders buttons for different page sizes', async () => {
         
-        const component = await mountSuspended(Pagination, {
+        const component = await mountSuspended(PaginationComponent, {
             props: {
                 pageSize: 10,
               },
@@ -21,7 +21,7 @@ describe('Pagination', () => {
 
     it('emits pageSizeChanged event with expected page size when button for 25 is clicked', async () => {
         
-        const component = await mountSuspended(Pagination, {
+        const component = await mountSuspended(PaginationComponent, {
             props: {
                 pageSize: 10,
             },
@@ -34,7 +34,7 @@ describe('Pagination', () => {
     })
 
     it('applies active class to the button based on pageSize prop', async () => {
-        const component = await mountSuspended(Pagination, {
+        const component = await mountSuspended(PaginationComponent, {
             props: {
                 pageSize: 25,
             },
