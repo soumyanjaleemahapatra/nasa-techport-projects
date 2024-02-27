@@ -8,10 +8,9 @@
 </template>
   
 <script setup>
-import { ref, defineEmits, defineProps, onMounted } from 'vue';
 
 const emit = defineEmits(['pageSizeChanged']);
-const props = defineProps(['pageSize']);
+const {pageSize} = defineProps(['pageSize']);
 
 const changePageSize = (size) => {
     emit('pageSizeChanged', size);

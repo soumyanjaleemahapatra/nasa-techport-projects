@@ -15,8 +15,7 @@
   </template>
 
 <script setup>
-import { defineProps } from 'vue';
-const props = defineProps(['contactDetails', 'role']);
+const { contactDetails, role } = defineProps(['contactDetails', 'role']);
 </script>
 
 <style scoped>

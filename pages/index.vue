@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="projects--wrapper">
     <h1>NASA TechPort Projects</h1>
@@ -36,7 +37,7 @@
       <div v-if="!isLoading && projects.length === 0 && !errorMessage">
         <p class="projects__text">No projects were updated since {{formatDateToString(searchDate)}}</p>
       </div>
-      <Pagination 
+      <PaginationComponent
         v-if="!isLoading && displayedProjects.length > 0 && projects.length >= 10"
         :pageSize="pageSize" 
         @pageSizeChanged="pageSize=$event"
@@ -52,11 +53,11 @@ import '@vuepic/vue-datepicker/dist/main.css';
 
 import { formatDateToString } from '@/utils/utils';
 import ProjectDetails from '@/components/ProjectDetails.vue';
-import Pagination from '@/components/Pagination.vue';
+import PaginationComponent from '@/components/PaginationComponent.vue';
 import LoadingIndicator from '@/components/LoadingIndicator.vue';
 
 export default {
-  components: { VueDatePicker },
+  components: { VueDatePicker, ProjectDetails, PaginationComponent, LoadingIndicator },
   setup() {
     const searchDate = ref(new Date(new Date().setDate(new Date().getDate() - 7)));
     const isLoading = ref(true);
