@@ -1,24 +1,43 @@
 <template>
-    <div v-if="project.detail" class="project-details" @click="toggleDetailsVisibility">
-      <div>
-        <h2>{{project.detail?.title}}</h2>
-        <p class="project-details-text"> Project Id: {{project.projectId}} </p>
-        <p class="project-details-text">Start date: {{ project.detail?.startDateString }}</p>
-        <p class="project-details-text">End date: {{ project.detail?.endDateString }}</p>
-        <p class="project-details-text">Last updated: {{ project.detail?.lastUpdated }}</p>
-        <ClientOnly>
-          <Teleport to="body" v-if="isAdditionalDetailsVisible">
-            <AdditionalDetails :project="project" @toggleVisibility="toggleDetailsVisibility"/>
-          </Teleport> 
-        </ClientOnly>
-      </div>
-      <div v-if="project.detail?.statusDescription" 
-        class="project-details-status" 
-        :class="getStatusClass(project.detail.statusDescription)"
-      >
-        {{  project.detail?.statusDescription }}
-      </div>
+  <div
+    v-if="project.detail"
+    class="project-details"
+    @click="toggleDetailsVisibility"
+  >
+    <div>
+      <h2>{{ project.detail?.title }}</h2>
+      <p class="project-details-text">
+        Project Id: {{ project.projectId }}
+      </p>
+      <p class="project-details-text">
+        Start date: {{ project.detail?.startDateString }}
+      </p>
+      <p class="project-details-text">
+        End date: {{ project.detail?.endDateString }}
+      </p>
+      <p class="project-details-text">
+        Last updated: {{ project.detail?.lastUpdated }}
+      </p>
+      <ClientOnly>
+        <Teleport
+          v-if="isAdditionalDetailsVisible"
+          to="body"
+        >
+          <AdditionalDetails
+            :project="project"
+            @toggle-visibility="toggleDetailsVisibility"
+          />
+        </Teleport> 
+      </ClientOnly>
     </div>
+    <div
+      v-if="project.detail?.statusDescription" 
+      class="project-details-status" 
+      :class="getStatusClass(project.detail.statusDescription)"
+    >
+      {{ project.detail?.statusDescription }}
+    </div>
+  </div>
 </template>
   
 <script setup>

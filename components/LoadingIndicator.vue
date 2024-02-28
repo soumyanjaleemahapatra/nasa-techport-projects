@@ -15,8 +15,7 @@
         stroke="#3498db"
         stroke-linecap="round"
         class="spinner" 
-      >
-      </circle>
+      />
     </svg>
   </div>
 </template>

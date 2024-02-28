@@ -1,4 +1,4 @@
- <template>
+<template>
   <div>
     <NuxtLayout>
       <NuxtLoadingIndicator :throttle="0" />

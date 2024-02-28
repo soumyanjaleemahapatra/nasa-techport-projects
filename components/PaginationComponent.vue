@@ -1,10 +1,27 @@
 <template>
-    <div class="pagination">
-      <p class="pagination__text">Total projects to display:</p>
-      <button @click="changePageSize(10)"  :class="{ 'active': pageSize === 10 }">10</button>
-      <button @click="changePageSize(25)"  :class="{ 'active': pageSize === 25 }">25</button>
-      <button @click="changePageSize(50)"  :class="{ 'active': pageSize === 50 }">50</button>
-    </div>
+  <div class="pagination">
+    <p class="pagination__text">
+      Total projects to display:
+    </p>
+    <button
+      :class="{ 'active': pageSize === 10 }"
+      @click="changePageSize(10)"
+    >
+      10
+    </button>
+    <button
+      :class="{ 'active': pageSize === 25 }"
+      @click="changePageSize(25)"
+    >
+      25
+    </button>
+    <button
+      :class="{ 'active': pageSize === 50 }"
+      @click="changePageSize(50)"
+    >
+      50
+    </button>
+  </div>
 </template>
   
 <script setup>

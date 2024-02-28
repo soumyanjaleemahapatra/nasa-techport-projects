@@ -16,7 +16,9 @@
         </p>
       </div>
       <div v-if="project.detail?.supportingOrganizations">
-        <p class="text-bold">Supporting Organizations:</p>
+        <p class="text-bold">
+          Supporting Organizations:
+        </p>
         <ul>
           <template
             v-for="organization in project.detail.supportingOrganizations"
@@ -33,8 +35,8 @@
       <div
         v-if="
           project.detail?.principalInvestigators ||
-          project.detail?.programDirectors ||
-          project.detail?.projectManagers
+            project.detail?.programDirectors ||
+            project.detail?.projectManagers
         "
       >
         <h4>Project contact details:</h4>
@@ -42,19 +44,19 @@
           <div v-if="project.detail?.principalInvestigators">
             <ProjectContact
               role="Principal Investigator(s)"
-              :contactDetails="project.detail.principalInvestigators"
+              :contact-details="project.detail.principalInvestigators"
             />
           </div>
           <div v-if="project.detail?.programDirectors">
             <ProjectContact
               role="Program Director(s)"
-              :contactDetails="project.detail.programDirectors"
+              :contact-details="project.detail.programDirectors"
             />
           </div>
           <div v-if="project.detail?.projectManagers">
             <ProjectContact
               role="Project Manager(s)"
-              :contactDetails="project.detail.projectManagers"
+              :contact-details="project.detail.projectManagers"
             />
           </div>
         </div>

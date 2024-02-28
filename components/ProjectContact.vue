@@ -1,18 +1,25 @@
 <template>
-    <div class="project-contact">
-      <h5>{{ role }}</h5>
-      <div v-for="contact in contactDetails" :key="contact.contactId" class="project-contact__detail">
-        <p class="project-contact__detail__text">{{ contact.fullName }}</p>
-        <a v-if="contact.primaryEmail" 
-          class="project-contact__detail__link" 
-          :href="'mailto:' + contact.primaryEmail"
-          @click.stop
-        >
-          {{ contact.primaryEmail }}
-        </a>
-      </div>
+  <div class="project-contact">
+    <h5>{{ role }}</h5>
+    <div
+      v-for="contact in contactDetails"
+      :key="contact.contactId"
+      class="project-contact__detail"
+    >
+      <p class="project-contact__detail__text">
+        {{ contact.fullName }}
+      </p>
+      <a
+        v-if="contact.primaryEmail" 
+        class="project-contact__detail__link" 
+        :href="'mailto:' + contact.primaryEmail"
+        @click.stop
+      >
+        {{ contact.primaryEmail }}
+      </a>
     </div>
-  </template>
+  </div>
+</template>
 
 <script setup>
 const { contactDetails, role } = defineProps(['contactDetails', 'role']);

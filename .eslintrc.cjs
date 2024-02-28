@@ -28,6 +28,10 @@ module.exports = {
     "plugins": [
         "vue"
     ],
+    "ignorePatterns": [
+        "dist/"
+    ],
     "rules": {
-    }
+        "vue/require-prop-types": "off",
+    },
 }
