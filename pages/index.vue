@@ -1,19 +1,26 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="projects--wrapper">
     <h1>NASA TechPort Projects</h1>
 
-    <div v-if="errorMessage" class="error-message">
+    <div
+      v-if="errorMessage"
+      class="error-message"
+    >
       {{ errorMessage }}
     </div>
 
-    <div v-if="isLoading" class="spinner">
+    <div
+      v-if="isLoading"
+      class="spinner"
+    >
       <LoadingIndicator v-if="isLoading" />
     </div>
 
     <div v-else>
       <div class="projects">
-        <p class="projects__text">Search projects from date: </p>
+        <p class="projects__text">
+          Search projects from date:
+        </p>
         <ClientOnly>
           <VueDatePicker
             v-model="searchDate"
@@ -26,8 +33,12 @@
         </ClientOnly>
       </div>
 
-      <ul v-if="!isLoading" class="projects__list">
-        <li v-for="project in displayedProjects" 
+      <ul
+        v-if="!isLoading"
+        class="projects__list"
+      >
+        <li
+          v-for="project in displayedProjects" 
           :key="project.id"
           class="projects__list__item"
         >
@@ -35,12 +46,14 @@
         </li>
       </ul>
       <div v-if="!isLoading && projects.length === 0 && !errorMessage">
-        <p class="projects__text">No projects were updated since {{formatDateToString(searchDate)}}</p>
+        <p class="projects__text">
+          No projects were updated since {{ formatDateToString(searchDate) }}
+        </p>
       </div>
       <PaginationComponent
         v-if="!isLoading && displayedProjects.length > 0 && projects.length >= 10"
-        :pageSize="pageSize" 
-        @pageSizeChanged="pageSize=$event"
+        :page-size="pageSize" 
+        @page-size-changed="pageSize=$event"
       />
     </div>
   </div>
@@ -97,7 +110,6 @@ export default {
         isLoading.value = false;
       }
     };
-
     const fetchProjectDetails = (projectsToFetch) => {
       const fetchPromises = projectsToFetch.map(async (project) => {
         try {
