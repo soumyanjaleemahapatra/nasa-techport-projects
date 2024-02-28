@@ -85,22 +85,18 @@ export default {
       displayedProjects.value = [];
       currentPage.value = 1;
     };
-
+    
     const fetchProjects = async () => {
       isLoading.value = true;
       errorMessage.value = ''; 
       resetPage();
       try {
-        const queryParams = new URLSearchParams({
-          updatedSince: formatDateToString(searchDate.value),
-        });
-        const response = await fetch(`/api/projects?${queryParams.toString()}`);
-
-        if (!response.ok) {
-          throw new Error(`Error fetching projects: ${response.statusText}`);
-        }
-        const data = await response.json();
-        projects.value = data.projects;
+        const { data} = await useFetch('/api/projects', {
+          query: {
+            updatedSince: formatDateToString(searchDate.value)
+          }
+        })
+        projects.value = data.value.projects;
         paginateProjects();
         
       } catch (error) {
@@ -110,26 +106,21 @@ export default {
         isLoading.value = false;
       }
     };
+
     const fetchProjectDetails = (projectsToFetch) => {
       const fetchPromises = projectsToFetch.map(async (project) => {
         try {
-          const response = await fetch(`/api/projects/${project.projectId}`);
-          if (!response.ok) {
-            throw new Error(`Error fetching project details: ${response.statusText}`);
-          }
-          const detail = await response.json();
-          project.detail = detail.project;
+          const {data} = await useFetch(`/api/projects/${project.projectId}`);
+          project.detail = data.value.project;
         } catch (error) {
           console.error('Error fetching project details:', error);
           errorMessage.value = error.message || 'An unexpected error occurred.';
         }
       });
-
       return Promise.all(fetchPromises).finally(() => {
         isLoading.value = false; 
       });
     };
-
 
     const paginateProjects = () => {
       isLoading.value = true;
